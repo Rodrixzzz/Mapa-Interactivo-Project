@@ -11,7 +11,6 @@ geocodificadorModulo = (function () {
 
      geocodificador.geocode({address:direccion},function(result,status){
         if(status === 'OK'){
-          console.log(result[0].geometry.location);
           funcionALlamar(direccion,result[0].geometry.location);
         }
         else{
